@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <meta name="description"
+        content="This is a minimalist Todo List web application built using HTML, CSS, and JavaScript. It features dark mode for improved visibility in low-light environments and provides the functionality to add, edit, and remove tasks.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="todoList">
+            <h1 ondblclick="darkMode()">Todo List</h1>
+            <div>
+                <input id="input" type="text" placeholder="Add your task">
+                <button onclick="addPlan()">Add</button>
+            </div>
+            <div id="listContainer">
+                <!-- <div class="listItem ">
+                    <img src="./assets/icons8-unchecked-checkbox-80.png" style="width: 30px; height: 30px;"
+                        onclick="toggleCheck(this)">
+                    <h4 ondblclick="editTask(this)">test</h4>
+                    <button class="removeBtn" onclick="removeTask(this)">Remove</button>
+                </div>
+                <div class="listItem checked">
+                    <img src="./assets/icons8-unchecked-checkbox-80.png" style="width: 30px; height: 30px;"
+                        onclick="toggleCheck(this)">
+                    <h4 ondblclick="editTask(this)">test</h4>
+                    <button class="removeBtn" onclick="removeTask(this)">Remove</button>
+                </div> -->
+
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

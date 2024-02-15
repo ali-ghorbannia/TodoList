@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    150deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+#container {
+  display: grid;
+  min-width: 40%;
+  margin: 5rem auto;
+  place-content: center;
+}
+#todoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  width: 100%;
+  background-color: #faebd7;
+  border-radius: 25px;
+}
+#todoList > h1 {
+  margin-bottom: 0.6rem;
+  font-size: 24px;
+}
+#listContainer {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+  width: 100%;
+}
+.listItem {
+  width: 100%;
+  display: flex;
+  margin-block: 0.2rem;
+  align-items: center;
+}
+
+.listItem > h4 {
+  margin-right: 0.7rem;
+}
+.removeBtn {
+  margin-left: auto;
+}
+
+/* List item Checke */
+.listItem.checked > h4 {
+  text-decoration: line-through;
+}
+.listItem.checked > img {
+  content: url('./assets/icons8-checked-checkbox-80.png');
+}
+
+/* commen */
+
+input[type='text'] {
+  padding: 0.5rem 1rem;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(34, 193, 195);
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+}
+
+button:hover,
+button:focus-within {
+  color: white;
+  background-color: rgb(253, 187, 45);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+}
+
+/* Dark Mode */
+body.dark {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    150deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 100%
+  );
+  color: white;
+}
