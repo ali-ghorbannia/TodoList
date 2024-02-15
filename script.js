@@ -7,7 +7,7 @@ function addPlan() {
     let listItem = document.createElement('div');
     listItem.setAttribute('class', 'listItem');
     let output =
-      '<img src="./assets/icons8-unchecked-checkbox-80.png" style="width: 30px; height: 30px;" onclick="toggleCheck(this)">';
+      '<img src="assets\icons8-unchecked-checkbox-80.png" style="width: 30px; height: 30px;" onclick="toggleCheck(this)">';
     output += '<h4 ondblclick="editTask(this)">' + plan + '</h4>';
     output +=
       '<button class="removeBtn" onclick="removeTask(this)">Remove</button>';
