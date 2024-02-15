@@ -58,7 +58,8 @@ function darkMode() {
 
   if (
     localStorage.getItem('dark-mode') == 'disabled' ||
-    localStorage.getItem('dark-mode') == ''
+    localStorage.getItem('dark-mode') == '' ||
+    localStorage.getItem('dark-mode') == null
   ) {
     body.setAttribute('class', 'dark');
     localStorage.setItem('dark-mode', 'enabeld');
