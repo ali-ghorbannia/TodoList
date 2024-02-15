@@ -59,7 +59,7 @@ body {
   text-decoration: line-through;
 }
 .listItem.checked > img {
-  content: url('./assets/icons8-checked-checkbox-80.png');
+  content: url('assets\icons8-checked-checkbox-80.png');
 }
 
 /* commen */
